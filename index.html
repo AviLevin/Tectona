@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="./styles.css">
+    <title>Hello, world!</title>
+
+
+
+    <style>
+ html, body {
+    margin: 0;
+    height: 100%;
+    background-color: #f7f7f7;
+}
+
+.tectona{
+    display: flex;
+    justify-content: center;
+    margin-top:20px;
+    text-align: center;
+    text-decoration: underline;
+   
+}
+
+    </style>
+</head>
+
+<body>
+
+    <div style="direction: rtl;     text-align: right; font-size: smaller;" class="container">
+        <h2 class="tectona" >Tectona Test</h2>
+        <br>
+        <p> <h3 class="tectona">MVC Architecture </h3>
+            &nbsp;
+            <br>
+
+            תבנית Model-View-Controller (בקיצור MVC) היא תבנית עיצוב המשמשת להפשטת אפליקציה כלשהי
+            חלוקת היישום מחולקת לשלושה חלקים, מודל, תצוגה ובקר. בשיטה זו התלות בין הממשק משתמש לשאר חלקי התוכנה פוחתת,
+            וכך מצומצמת התלות בין המרכיבים, התחזוקה פוחתת ניתן לעשות שימוש חוזר בחלקים השונים.
+            <br>
+            היתרון הגדול והמרכזי ביותר של MVC הוא כמובן הפרדת השכבות והיכולת לנתק לחלוטין את אופן עיבוד המידע (שכבת ה
+            control) משכבת ההצגה שלו למשתמש (view).
+            <br>
+            ההפרדה בין השכבות נותנת יכולת לרכז את הפיתוח לדוג' בשכבת ה VIEW בלי תלות ב BUSINESS LOGIC.
+            <br>
+            בפיתוח תחת מודל ה MVC כל שמפתח הלוגיקה נדרש לדעת הוא מהם הארגומנטים אותם הוא מקבל משכבת ה view ואיזה מידע
+            מועבר בתוכם. controller עצמו אינו נדרש עוד לזהות בעצמו את האובייקט שהפעיל אותו, הוא אינו נדרש לדוגמא לנתח
+            איזה כפתור נלחץ, הוא רק נדרש לקבל את הקלט שהוא מצפה לו, להפעיל את העיבוד ולהחזיר לשכבת ה VIEW את הפלט המתאים
+            <br>
+        <p><span style="font-weight: 400;">בין יתרונות ה MVC&nbsp; ניתן למנות&nbsp; -&nbsp;&nbsp;&nbsp;</span></p>
+        <ol>
+            <li style="font-weight: 400;"><span style="font-weight: 400;">תהליך פיתוח אפליקציות WEB מהיר יותר.</span>
+            </li>
+            <li style="font-weight: 400;"><span style="font-weight: 400;">תומך בטכניקת פעילות רקע אסינכרונית.</span>
+            </li>
+            <li style="font-weight: 400;"><span style="font-weight: 400;">אידיאלי לSCALE&nbsp; - פיתוח אפליקציות WEB
+                    גדולות.</span></li>
+            <li style="font-weight: 400;"><span style="font-weight: 400;">החזרת הDATA ללא צורך בפירמוט.</span></li>
+            <li style="font-weight: 400;"><span style="font-weight: 400;">שינוי בחלק קטן לא משפיע על כל המודל.</span>
+            </li>
+            <li style="font-weight: 400;"><span style="font-weight: 400;">פיתוח בו זמנית - הפרדת חלקי האפליקציה לפי
+                    טכנולוגיות וחלוקת הפיתוח יעילה צד ה VIEW ינתן למפתחי פרונט וצד CONTROL ינתן למפתחי צד שרת.</span>
+            </li>
+            <li style="font-weight: 400;"><span style="font-weight: 400;">יעילות וקלות בביצוע UNIT TESTING.</span></li>
+            <li style="font-weight: 400;"><span style="font-weight: 400;">לכידות גבוהה - מאפשר איחוד לוגי של פעולות
+                    דומות ב CONTROLLER, כמו כן,&nbsp; VIEWS שונים של המודל מקובצים יחד.</span></li>
+        </ol>
+
+        <p><span style="font-weight: 400;">חסרונות -&nbsp;</span></p>
+
+        <ol>
+            <li style="font-weight: 400;"><span style="font-weight: 400;">ניווט קוד - ניווט המסגרת יכול להיות מורכב
+                    מכיוון שהוא מציג שכבות הפשטה חדשות ומחייב את המשתמשים להסתגל לקריטריוני הפירוק של MVC.</span></li>
+            <li style="font-weight: 400;"><span style="font-weight: 400;">ייצוגים מרובים - פירוק תכונה לשלושה חפצים
+                    גורמת לפיזור. לפיכך, דרישה למפתחים לשמור על עקביות של מספר ייצוגים בבת אחת.</span></li>
+        </ol>
+        <br>
+
+        </p>
+        <hr>
+
+        <h3 class="tectona"> TecTona Solution</h3>
+    </div>
+
+    <div class="container">
+        <div id="title"></div>
+        <div id="demo" class="row"> </div>
+
+    </div>
+
+    <div style="direction: rtl;     text-align: right; font-size: smaller;" class="container">
+        <hr>
+
+        <p style="font-weight: 400;"><span style="font-weight: 400;"> <h3 class="tectona">&nbsp;difference (in Javascript) between "==" & "===" logical operators</h3> </span></p>
+
+        <p><span style="font-weight: 400;">"=="&nbsp; -&nbsp; משמש להשוואה בין שני משתנים ללא קשר לסוג הנתונים של
+                המשתנה.</span></p>
+        <p><span style="font-weight: 400;">"===" -&nbsp; משמש להשוואה בין שני משתנים אך הדבר יבדוק סוג קפדני - STRICT
+                TYPE, מה שאומר שהוא יבדוק את סוג הנתונים וישווה שני ערכים.</span></p>
+        <p><span style="font-weight: 400;">דוגמה:&nbsp;</span></p>
+        <p><strong>var</strong><span style="font-weight: 400;"> number = 100;</span></p>
+        <p><strong>if</strong><span style="font-weight: 400;"> (number == 100).....</span></p>
+
+        <p><span style="font-weight: 400;">כלומר במצב שמשווים "100" = 100&nbsp; לעומת &nbsp; 100=100 &nbsp; &nbsp; - זה
+                יהיה אותה תוצאה.</span></p>
+
+        <p><span style="font-weight: 400;">לעומת זאת כאשר משתמשים באופרטור "==="</span></p>
+        <p><span style="font-weight: 400;">אזי יבדק גם סוג הנתון&nbsp; -&nbsp;&nbsp;&nbsp;</span></p>
+        <p><span style="font-weight: 400;">במצב שמשווים "100" = 100&nbsp; &nbsp; (לא שווים) .&nbsp; לעומת &nbsp; 100=100
+                (שווים) &nbsp; &nbsp; - זה&nbsp; לא יהיה אותה תוצאה.</span></p>
+        <p><br /><br /></p>
+    </div>
+
+
+
+    <div style="direction: rtl;     text-align: right;" class="container">
+
+<hr>
+<h3 class="tectona">Extend the "Array" class in Javascript <br> with a new method that calculates and returns the
+    sum of the Array's items</h3>
+    
+<br>
+    </div>
+
+    <div class="container" style="    display: flex;
+    justify-content: center;" ><pre>
+    <code>  class TravellerCollection extends Array {
+        sum(key) {
+            return this.reduce((a, b) => a + (b[key] || 0), 0);
+        }
+    }
+    const traveler = new TravellerCollection(...[
+        {  description: 'Senior', Amount: 50},
+        {  description: 'Senior', Amount: 50},
+        {  description: 'Adult', Amount: 75},
+        {  description: 'Child', Amount: 35},
+        {  description: 'Infant', Amount: 25 }, 
+    ]);
+    
+    console.log(traveler.sum('Amount'));</code>
+</pre>
+
+
+
+</div>
+<div class="tectona">
+
+<p>sum of the Array's items:  </p>
+&nbsp;
+<div style="color: blue" ; id="demo1"></div>
+
+
+<br>
+<br>
+<br>
+
+<div class="FooterStyles">
+    <p>
+        Made for
+     
+      
+        <b>Tectona</b>
+        
+        with ❤️ by
+        <a
+            href="https://github.com/AviLevin"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            Avi Levin
+        </a>
+        2021
+    </p>
+</div>
+
+</div>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
